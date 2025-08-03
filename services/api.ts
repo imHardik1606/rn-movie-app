@@ -9,7 +9,7 @@ export const TMDB_CONFIG = {
 
 // /discover/movie
 
-export const fetchMovies = async ({ query }: { query: string }) => {
+export const fetchMovies = async ({ query }: { query: string }): Promise<Movie[]> => {
   // if query search with query
   // else search latest movies
   const endpoint = query
